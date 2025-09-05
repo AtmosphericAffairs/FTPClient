@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets, QtMultimedia, QtGui, QtCore
+from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QAction, QMenu
 import sys
 from buttonFtp import Button
@@ -8,7 +8,6 @@ from window2load import Modalwindow2Load
 from QlistVidgets import List
 from QlistVidgets2 import List2
 from autoJob import TimerAuto
-import FtpFunc as FF
 import os
 
 
@@ -28,7 +27,7 @@ if not os.path.exists('Arhive/Download'):
 if not os.path.exists('Arhive/Load'): 
     os.makedirs('Arhive/Load')
 
-f = 'image/ftp.jpg' #переменная иконки
+f = 'ftp.jpg' #переменная иконки
 
 class Window(QMainWindow):
 
